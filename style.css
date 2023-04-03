@@ -13,8 +13,11 @@
 
 header nav {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+
     height: 150px;
-    background: red;
+    /* background: red; */
 
     padding: 0 40px;
 }
@@ -24,4 +27,27 @@ header nav #logo {
     object-fit: contain;
 }
 
+header nav ul {
+    display: flex;
+    margin: auto 15px;
+}
 
+header nav ul li {
+    margin: auto 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--font-primary);
+}
+
+header nav input {
+    height: 25px;
+    border: 0;
+    border-bottom: 1px solid var(--font-secondary);
+    font-size: 12px;
+    min-width: 300px;
+    margin: auto;
+}
