@@ -124,7 +124,7 @@ header nav .input-container svg {
 
 main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 150px 40px;
 }
 
@@ -136,6 +136,8 @@ main .card {
     background: var(--beige);
     border-radius: 20px;
     padding: 20px;
+    transition: all .5s;
+    margin: 0 30px;
 }
 
 main .card img {
@@ -157,4 +159,13 @@ main .card .grid {
 
 main .card .grid span {
     margin-left: 15px;
+}
+
+main .card:hover {
+    background: var(--primary-green);
+    transform: scale(1.2);
+}
+
+main .card:hover h3, main .card:hover p, main .card:hover span {
+    color: white;
 }
