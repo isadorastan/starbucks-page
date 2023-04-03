@@ -32,6 +32,10 @@ header nav ul {
     margin: auto 15px;
 }
 
+header nav ul svg {
+    color: var(--font-primary);
+}
+
 header nav ul li {
     margin: auto 10px;
     font-size: 12px;
@@ -49,5 +53,27 @@ header nav input {
     border-bottom: 1px solid var(--font-secondary);
     font-size: 12px;
     min-width: 300px;
+    padding-right: 25px;
+    color: var(--font-secondary);
+}
+
+header nav input::placeholder {
+    color: var(--font-secondary);
+}
+
+header nav input:focus {
+    outline: none;
+}
+
+header nav .input-container {
     margin: auto;
+    position: relative;
+}
+
+header nav .input-container svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--font-secondary);
+    width: 20px;
 }
