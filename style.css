@@ -11,4 +11,17 @@
     --font-grey: #009163;
 }
 
+header nav {
+    display: flex;
+    height: 150px;
+    background: red;
+
+    padding: 0 40px;
+}
+
+header nav #logo {
+    width: 50px;
+    object-fit: contain;
+}
+
 
