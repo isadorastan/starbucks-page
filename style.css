@@ -57,6 +57,8 @@ header nav input {
     min-width: 400px;
     padding-right: 25px;
     color: var(--font-secondary);
+
+    background: none;
 }
 
 header nav input::placeholder {
@@ -125,7 +127,7 @@ header nav .input-container svg {
 main {
     display: flex;
     justify-content: center;
-    padding: 150px 40px;
+    padding: 100px 40px;
 }
 
 main .card {
@@ -168,4 +170,16 @@ main .card:hover {
 
 main .card:hover h3, main .card:hover p, main .card:hover span {
     color: white;
+}
+
+.bg-circle {
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: var(--light-grey);
+
+    position: absolute;
+    top: -35%;
+    left: calc( 50% - 400px);
+    z-index: -1;
 }
